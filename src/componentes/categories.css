@@ -1,0 +1,34 @@
+.categories{
+    background-color: red;
+    height: 240px;
+    flex-shrink: 1;
+}
+
+.category-item{
+    margin: 0.4rem;
+    padding: 0.2rem;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.category-info{
+    width: 100px;
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+    flex-shrink: 0;
+
+}
+.category-bar{
+    margin: 0.6rem;
+    width: 100%;
+
+    & .category-process{
+        height: 6px;
+
+        background: skyblue;
+        border: none;
+    }
+}

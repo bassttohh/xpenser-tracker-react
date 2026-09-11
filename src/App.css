@@ -1,0 +1,26 @@
+#root {
+  min-height: 100vh;
+  background-color: antiquewhite;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.app {
+  width: 550px;
+  height: 600px;
+  padding: 2rem;
+
+  border: 2px solid black;
+
+  display: flex;
+  flex-direction: column;
+
+}
+.title{
+    font-size: 1.5rem;
+}
