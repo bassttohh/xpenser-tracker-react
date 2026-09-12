@@ -1,3 +1,6 @@
+@import './componentes/transactions.css';
+@import './componentes/expenseForm.css';
+
 #root {
   min-height: 100vh;
   background-color: antiquewhite;

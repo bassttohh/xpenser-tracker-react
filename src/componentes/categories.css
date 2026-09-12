@@ -1,14 +1,23 @@
 .categories{
-    background-color: red;
-    height: 240px;
-    flex-shrink: 1;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    align-self: flex-start;
+}
+.categories-list{
+    height: 128px;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.4rem;
+    padding: 0.2rem 0;
+    overflow-y: auto;
 }
 
 .category-item{
-    margin: 0.4rem;
-    padding: 0.2rem;
-
-
+    margin: 0 0.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,14 +25,25 @@
 .category-info{
     width: 100px;
     display: flex;
+    font-size: 16px;
     gap: 0.3rem;
+
     align-items: center;
     flex-shrink: 0;
 
 }
+.category-info svg{
+    width: 24px;
+    height: 24px;
+    flex: 0 0 24px;
+}
+.category-info .lucide-car{
+    transform: scale(1);
+}
 .category-bar{
-    margin: 0.6rem;
-    width: 100%;
+    margin: 0 0.6rem;
+    flex: 1;
+    min-width: 0;
 
     & .category-process{
         height: 6px;

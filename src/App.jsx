@@ -1,6 +1,8 @@
-// import { useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 import { Categories } from './componentes/categories'
+import ExpenseForm from './componentes/expenseForm'
+import Transactions from './componentes/transactions'
 
 const Bills = ({time}) => {
   return (
@@ -16,6 +18,12 @@ const Bills = ({time}) => {
 }
 
 const App = () => {
+  const [transactions, setTransactions] = useState([]);
+
+  const handleAddTransaction = (transactions) => {
+    setTransactions((prevTransactions) => [...prevTransactions, transactions]);
+  };
+
   return (
     <main className='app'>
       <h3 className='title'>
@@ -24,7 +32,11 @@ const App = () => {
 
       <Bills />
 
-      <Categories/>
+      <Categories />
+
+      <ExpenseForm onAddTransaction={handleAddTransaction} />
+
+      <Transactions transactions={transactions} />
     </main>
    )
 }

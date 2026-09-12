@@ -1,0 +1,42 @@
+.transaction {
+  width: 100%;
+  margin-top: 0.45rem;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid #000;
+  background-color: #fff8ec;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.transaction-description {
+  min-width: 0;
+}
+
+.transaction-description p,
+.transaction-amount p {
+  margin: 0;
+}
+
+.transaction-description p:first-child {
+  overflow: hidden;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.transaction-description p:last-child {
+  margin-top: 0.15rem;
+  color: #5b5145;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+.transaction-amount {
+  flex-shrink: 0;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
+}
